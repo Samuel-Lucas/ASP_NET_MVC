@@ -14,6 +14,10 @@ namespace SalesWebMvc.Data
         {
         }
 
+        // Cada classe do projeto precisa colocar no DbSet
+
         public DbSet<SalesWebMvc.Models.Department> Department { get; set; }
+        public DbSet<SalesWebMvc.Models.Seller> Seller { get; set; }
+        public DbSet<SalesWebMvc.Models.SalesRecord> SalesRecord { get; set; }
     }
 }
